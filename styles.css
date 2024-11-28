@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "Led-Zeppelin";
+    src: url(Fonts/Kashmir.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: #777;
+    font-size: 1.03em;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5rem;
+    color: white;
+    text-decoration: none;
+    font-family: Led-Zeppelin;
+}
+
+.nav-main {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.nav-main li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .65);
+    background-image: url("Images/cover.jpg");
+    background-size: cover;
+    padding-bottom: 20px;
+    background-blend-mode: multiply;
+}
+
+.band-name {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 10px;
+    font-weight: normal;
+    color: white;
+    font-family: Led-Zeppelin;
+}
+
+.band-name-large {
+    font-size: 7em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    text-align: center;
+    font-weight: normal;
+    color: #333;
+    font-size: 2em;
+    font-family: Led-Zeppelin;
+    font-weight: bold;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: auto;
+    margin: 15px;
+    border-radius: 2%;
+}
+
+.main-footer {
+    background-color: rgba(0, 0, 0, .5);
+    background-image: url("Images/footer.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    height: 40px;
+    width: auto;
+    color: white;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .6em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% .5em 15%;
+    background-color: rgba(255, 255, 255, .15);
+    color: white;
+    border-radius: 0;
+    border: 2px solid #997404;
+    font-size: 1em;
+    font-weight: lighter;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    height: 70px;
+    width: 70px;
+    font-size: 2em;
+    border-radius: 50%;
+    color: #997404;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 21%;
+}
+
+.tour-venue {
+    width: 54%;
+}
+
+.tour-btn {
+    width: 21%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #b68c0d;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    background-color: #997404;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.record-title {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-family: Led-Zeppelin;
+    font-weight: bold;
+}
+
+.record-image {
+    height: 200px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.record-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.cart-header {
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.cart-column {
+    align-items: center;
+    border-bottom: 1px solid black;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+.cart-row:last-child { 
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border-bottom: none;
+}
+
+.cart-img {
+    height: 75px;
+    width: auto;
+    border-radius: 7.5px;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+}
+
+.cart-qty {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1em;
+}
+
+.btn-danger {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: .2em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: rgb(156, 0, 0);
+}
+
+.cart-qty-input {
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #997404;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 20px;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;;
+    font-size: 1.2em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.6em;
+}
